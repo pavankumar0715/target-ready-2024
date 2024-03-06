@@ -8,6 +8,7 @@ public class InWords {
     private static final String[] teens = {"Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
     private static final String[] tens = {"", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
     private static final String[] thousands = {"", "Thousand", "Million", "Billion"};
+    //Added the international number system for now, will try to change it for next submission
     private static final String[] ind = {"", "Lakh", "Crore"};
     private static String helper(int n) {
         if (n == 0) {

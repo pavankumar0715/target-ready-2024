@@ -13,7 +13,7 @@ public class PrintCalendar {
 
         switch (month) {
             case 2:
-                maxDays = isLeap(year) ? 29 : 28;
+                maxDays = (isLeap(year)) ? 29 : 28;
                 break;
             case 4:
             case 6:
@@ -38,6 +38,7 @@ public class PrintCalendar {
 
         return (day + (13 * (m + 1) / 5) + y + (y / 4) + (c / 4) + (5 * c)) % 7 - 1;
     }
+    //The formula seems wrong, will try to correct during the next submission
 
     public static void printCalendar(int month, int year){
         for (String dayName : DAY_NAMES) {
