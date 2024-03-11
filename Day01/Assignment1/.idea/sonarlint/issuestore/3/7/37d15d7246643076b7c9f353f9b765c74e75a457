@@ -1,0 +1,9 @@
+
+>
+java:S1643)"Use a StringBuilder instead.(¥Ñ¯æúÿÿÿÿ8ËøàÍâ1
+H
+java:S1905)"&Remove this unnecessary cast to "int".(¥Ñ¯æúÿÿÿÿ8×øàÍâ1
+G	java:S106;"+Replace this use of System.out by a logger.(óÁíŠ8ØøàÍâ1
+X	java:S1257"<This block of commented-out lines of code should be removed.(÷ÌÚ¶8ØøàÍâ1
+D
+java:S1068"'Remove this unused "ind" private field.(ÍŸòØ8ØøàÍâ1

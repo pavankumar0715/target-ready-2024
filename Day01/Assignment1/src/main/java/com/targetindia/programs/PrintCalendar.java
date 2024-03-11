@@ -30,41 +30,43 @@ public class PrintCalendar {
 
 
     private static int calculateFirstDayOfMonth(int month, int year) {
-        int day = 1;
-        int m = (month < 3) ? (month + 10) : (month - 2);
-        int y = (month < 3) ? (year - 1) : year;
-        int c = y / 100;
-        y %= 100;
 
-        return (day + (13 * (m + 1) / 5) + y + (y / 4) + (c / 4) + (5 * c)) % 7 - 1;
+        int[] offset={0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4};
+        int leapDays=year/4 - year/100 + year/400 +1;
+
+        if(isLeap(year) && month <3)
+            leapDays-=1;
+
+        return (leapDays+offset[month-1])%7;
     }
     //The formula seems wrong, will try to correct during the next submission
 
     public static void printCalendar(int month, int year){
+        if(isValid(month,year)) {
+            System.out.println("Invalid month and year");
+            return;
+        }
+
         for (String dayName : DAY_NAMES) {
             System.out.print(" " + dayName);
         }
         System.out.println();
-
 
         int spaces =  calculateFirstDayOfMonth(month, year);
         if (spaces < 0)
             spaces = 6;
 
         for (int i = 0; i < spaces; i++) {
-            System.out.print("    ");
+            System.out.print("\t");
         }
-
-
 
         int daysInMonth = getDaysInMonth(month, year);
         for (int day = 1; day <= daysInMonth; day++) {
-            System.out.printf(" %4d ", day);
+            System.out.printf(" %3d", day);
 
             if (((day + spaces) % 7 == 0) || (day == daysInMonth))
                 System.out.println();
         }
-        return;
     }
 
 
@@ -74,7 +76,5 @@ public class PrintCalendar {
         year=KeyboardUtil.getInt("Enter the year:");
 
         printCalendar(month, year);
-
-
     }
 }

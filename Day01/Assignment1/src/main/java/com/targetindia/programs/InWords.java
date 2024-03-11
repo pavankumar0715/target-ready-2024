@@ -2,6 +2,7 @@ package com.targetindia.programs;
 
 import com.targetindia.utils.KeyboardUtil;
 
+
 public class InWords {
 
     private static final String[] units = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"};
@@ -24,7 +25,7 @@ public class InWords {
             return tens[n / 10] + " " + units[n % 10] + " ";
         }
         else {
-            return units[n/100]+" hundred "+helper(n%100);
+            return units[n/100]+" Hundred "+helper(n%100);
         }
     }
     public static String inWords(int n){
@@ -51,11 +52,11 @@ public class InWords {
     public static void main(String[] args) {
         int num=0;
         num=KeyboardUtil.getInt("Enter a number:");
-        System.out.println("45646 in words is "+inWords(45646));
-        System.out.println("12 in words is "+inWords(12));
-        System.out.println("8468782 in words is "+inWords(8468782));
-        System.out.println("99922 in words is "+inWords(99922));
-        System.out.println(num + " in words is " +inWords(num));
+//        System.out.println("45646 in words is: "+inWords(45646));
+//        System.out.println("12 in words is: "+inWords(12));
+//        System.out.println("8468782 in words is: "+inWords(8468782));
+//        System.out.println("99922 in words is: "+inWords(99922));
+        System.out.println(num + " in words is: " +inWords(num));
 
 
 

@@ -1,0 +1,12 @@
+
+e
+java:S6208"CMerge the previous cases into this one using comma-separated label.(—Í×©øÿÿÿÿ8«…ãËâ1
+C	java:S131""Add a default case to this switch.(¹Ë”Óùÿÿÿÿ8¸…ãËâ1
+G	java:S106."+Replace this use of System.out by a logger.(îßÍÉ8¼…ãËâ1
+F	java:S1063"+Replace this use of System.out by a logger.(§å8½…ãËâ1
+L	java:S1065"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8½…ãËâ1
+G	java:S106<"+Replace this use of System.out by a logger.(Û‚öà8¾…ãËâ1
+L	java:S106A"+Replace this use of System.out by a logger.(ˆíı³üÿÿÿÿ8¾…ãËâ1
+L	java:S106D"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8¾…ãËâ1
+?
+java:S1659J""Declare "year" on a separate line.(ÍÁ›¼8¿…ãËâ1
