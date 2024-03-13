@@ -1,5 +1,9 @@
-package com.targetindia;
+package com.targetindia.program;
 
+import com.targetindia.model.Circle;
+import com.targetindia.model.Rectangle;
+import com.targetindia.model.Square;
+import com.targetindia.model.Shape;
 
 public class Program {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.targetindia;
+package com.targetindia.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,12 +10,12 @@ import lombok.NoArgsConstructor;
 public class Square extends Rectangle{
     private double side=1.0;
 
-    Square(){
+    public Square(){
         super.setWidth(side);
         super.setLength(side);
     }
 
-    Square(double side){
+    public Square(double side){
         super.setWidth(side);
         super.setLength(side);
         this.side=side;

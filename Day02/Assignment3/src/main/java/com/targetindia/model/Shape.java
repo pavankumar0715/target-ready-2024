@@ -1,4 +1,4 @@
-package com.targetindia;
+package com.targetindia.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
