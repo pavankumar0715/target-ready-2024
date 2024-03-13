@@ -17,7 +17,7 @@ public class Circle {
         this.radius=radius;
     }
 
-    public Double getArea(){
+    public double getArea(){
         return PI*Math.pow(radius, radius);
     }
 
